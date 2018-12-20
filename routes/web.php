@@ -41,7 +41,10 @@ $student->save();
 
 
 });
-
+Route::get('/school',function()
+{
+    return view('school.DisplayTeacher');
+});
 Route::get('/DisplayTeacher',function()
 {
     return view('school.DisplayTeacher');
@@ -50,3 +53,10 @@ Route::get('/DisplayStudent',function()
 {
     return view('school.DisplayStudent');
 });
+
+Route::get('/insertteachers',function()
+{
+    return view('school.InsertTeacher');
+});
+
+//Route::post('/InserTeacher',['uses'=>'TeachersController@insert']);

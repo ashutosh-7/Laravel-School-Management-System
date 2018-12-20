@@ -20,6 +20,7 @@
         
         <tbody>
                 @for($i=1;$i<=DB::table('students')->count();$i++)
+               
                 <tr>
                     <?php $result=DB::table('students')->where('student_id','=',$i)->get() ?>
                     <td> {{$result[0]->student_id}}</td>
