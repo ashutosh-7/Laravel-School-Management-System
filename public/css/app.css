@@ -6,7 +6,9 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-
+table, th, td {
+  border: 1px solid black;
+}
 :root {
   --blue: #3490dc;
   --indigo: #6574cd;
